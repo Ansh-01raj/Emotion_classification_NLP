@@ -5,10 +5,11 @@
 #========================import packages=========================================================
 import streamlit as st
 import numpy as np
+import nltk
 import re
 from nltk.stem import PorterStemmer
 import pickle
-import nltk
+
 # Download NLTK stopwords
 nltk.download('stopwords')
 stopwords = set(nltk.corpus.stopwords.words('english'))
@@ -53,4 +54,5 @@ if st.button("Predict"):
     predicted_emotion, label = predict_emotion(user_input)
     st.write("Predicted Emotion:", predicted_emotion)
     st.write("Probability:", label)
+
 
