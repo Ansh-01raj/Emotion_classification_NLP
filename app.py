@@ -141,8 +141,7 @@ with st.container():
         st.markdown('<div class="big-title">Six Human Emotions Detection</div>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
         st.write('Detect the dominant emotion in a short piece of text. Powered by a TF-IDF + Logistic Regression pipeline.')
-    with col2:
-        st.image('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=60', width=140)
+    with col2:\n        # replaced photo with a neutral emoji/icon for a more professional look\n        st.markdown("<div style='display:flex;align-items:center;justify-content:center;height:100%;'><div style='font-size:48px'>🎯</div></div>", unsafe_allow_html=True)
 
 st.markdown('---')
 
