@@ -143,7 +143,7 @@ with st.container():
         st.write('Detect the dominant emotion in a short piece of text. Powered by a TF-IDF + Logistic Regression pipeline.')
     with col2:
         # no image or emoji — keeping header clean and plain
-        st.write("")("")        # no image or emoji — keeping header clean and plain\n        st.write("")
+        st.write("")       # no image or emoji — keeping header clean and plain\n        st.write("")
 
 st.markdown('---')
 
@@ -236,4 +236,5 @@ with st.expander('About this app'):
 
 # small note on running
 st.caption('Save this file as app.py and run `streamlit run app.py` in the same folder where your pickles live.')
+
 
